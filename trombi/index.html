@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Trombinoscope CNDL 2015-2016</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $.ajax({
+        type: "GET",
+        url: "../php/lecteurFlux.php?url=cdnl1516photo.xml", 
+        dataType: "xml",
+        success: function(data){parseXml(data)}
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+    </header>
+    <content>
+      <p>Hello world! This is HTML5 Boilerplate.</p>
+    </content>
+    <footer>
+    </footer>
+  </body>
+</html>
